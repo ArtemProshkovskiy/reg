@@ -28,6 +28,7 @@ if (isset($_SESSION['user'])) {
     <p>
         У вас нет аккаунта? - <a href="/register.php">зарегистрируйтесь</a>!
     </p>
+    <a href="new_pass.php">Забыл пароль</a>
 </form>
 <script
         src="https://code.jquery.com/jquery-3.6.3.min.js"
