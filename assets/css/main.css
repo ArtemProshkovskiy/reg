@@ -57,3 +57,7 @@ button {
 .logout {
     color: #b7625c;
 }
+
+.none {
+    display: none;
+}
