@@ -84,3 +84,37 @@ $('.reg__button').click(function (e) {
     });
 
 });
+
+
+
+
+
+$('.new).click(function (e) {
+    e.preventDefault();
+
+
+    let login = $('input[name="mail"]').val();
+
+
+    $.ajax({
+        url: 'vendor/new_pass.php',
+        type: 'POST',
+        dataType: 'json',
+        data: {
+            login: login,
+        },
+        success (data) {
+            if (data['status']) {
+                document.location.href = 'profile.php'
+            }else {
+                if (data.type === 1) {
+                    data.field.forEach(function (fields) {
+                        $(`input[name="${fields}"]`).addClass('erorr');
+                    });
+                }
+                $('.mass').text(data['mass']);
+            }
+        }
+    });
+
+});
