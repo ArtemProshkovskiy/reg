@@ -13,17 +13,29 @@
 <div class="mass act">
 
 </div>
-<form>
-    <label>Логин</label>
-    <input type="email" name="email" placeholder="Введите свою почту">
-    <label>Пароль</label>
-    <input class="none" name="cod" placeholder="Введите код котрый пришел">
-    <button class="new pass" type="submit">Войти</button>
-    <p>
-        У вас нет аккаунта? - <a href="/register.php">зарегистрируйтесь</a>!
-    </p>
-    <a href="new_pass.php">Забыл пароль</a>
-</form>
+<div style="display: flex; flex-direction: column; justify-content: center">
+    <form>
+        <label>Логин</label>
+        <input type="email" name="email" placeholder="Введите свою почту">
+        <label>Пароль</label>
+        <button class="new pass" type="submit">Войти</button>
+        <p>
+            У вас нет аккаунта? - <a href="/register.php">зарегистрируйтесь</a>!
+        </p>
+    </form>
+
+    <form class="form_cod">
+        <input class="none" name="cod" placeholder="Введите код котрый пришел">
+        <button class="cod_button">проверить код</button>
+    </form>
+
+    <form class="form_pass">
+        <input class="none" name="passw" placeholder="НОВИЙ ПАРОЛЬ">
+        <button class="pass_button">ПОМЕНЯТЬ ПАРОЛЬ</button>
+    </form>
+</div>
+
+
 <script
     src="https://code.jquery.com/jquery-3.6.3.min.js"
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="

@@ -58,6 +58,11 @@ button {
     color: #b7625c;
 }
 
-.none {
+.form_cod {
     display: none;
 }
+
+.form_pass {
+    display: none;
+}
+
